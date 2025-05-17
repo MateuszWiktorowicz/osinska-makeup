@@ -1,0 +1,9 @@
+{
+  "menu": {
+    "home": "Strona Główna",
+    "about": "O nas",
+    "contact": "Kontakt",
+    "services": "Usługi",
+    "portfolio": "portfolio"
+  }
+}
