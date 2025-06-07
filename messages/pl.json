@@ -1,9 +1,18 @@
 {
   "menu": {
-    "home": "Strona Główna",
-    "about": "O nas",
-    "contact": "Kontakt",
+    "pricing": "Cennik",
     "services": "Usługi",
-    "portfolio": "portfolio"
+    "portfolio": "Portfolio"
+  },
+  "button": {
+    "makeAppointment": "umów wizytę",
+    "findOutMore": "dowiedz się więcej",
+    "contact": "porozmawiajmy"
+  },
+  "heading": {
+    "intro": "Naturalne piękno z troską o Twoją skórę"
+  },
+  "text": {
+    "intro": "Jestem farmaceutką z pasją do pielęgnacji. Oferuję makijaż na każdą okazję oraz relaksujący masaż Kobido – japoński lifting bez skalpela. Zapraszam Cię do świata, gdzie piękno spotyka się z nauką."
   }
 }

@@ -4,10 +4,10 @@ import { useState } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import { useTranslations } from "next-intl";
-import ContactButton from "@/features/common/buttons/ContactButton";
 import Logo from "@/assets/icons/Logo";
 import NavItem from "./NavItem";
 import { navigation } from "../navigation.config";
+import Button from "@/components/ui/Button";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,7 +16,7 @@ export default function Header() {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <header className="bg-white shadow-md">
+    <header>
       <div className="container mx-auto flex justify-between items-center p-4">
         <Link href="/" className="p-3">
           <Logo
@@ -27,18 +27,19 @@ export default function Header() {
         </Link>
 
         <nav className="hidden md:flex space-x-6">
-          {navigation.map((item) => {
+          {navigation.map((item, index) => {
             return (
               <NavItem
                 label={t(item.translationKey)}
                 href={item.translationHref}
                 className="hover:text-primary"
+                key={index}
               />
             );
           })}
         </nav>
 
-        <ContactButton />
+        <Button variant="contact">{t("button.contact")}</Button>
 
         {/* Mobile Menu Button */}
         <button

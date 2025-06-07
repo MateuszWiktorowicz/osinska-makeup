@@ -2,8 +2,9 @@ import "../globals.css";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
 import { routing } from "@/lib/i18n/routing";
-import HeaderComponent from "@/features/header/components/Header";
+import HeaderComponent from "@/components/view/header/components/Header";
 import { Montserrat } from "next/font/google";
+import Footer from "@/components/view/footer/components/Footer";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -31,6 +32,7 @@ export default async function LocaleLayout({
         <NextIntlClientProvider>
           <HeaderComponent />
           {children}
+          <Footer />
         </NextIntlClientProvider>
       </body>
     </html>

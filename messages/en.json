@@ -1,7 +1,7 @@
 {
-    "menu": {
-      "home": "Home",
-      "about": "About Us",
-      "contact": "Contact"
-    }
+  "menu": {
+    "home": "Home",
+    "about": "About Us",
+    "contact": "Contact"
   }
+}

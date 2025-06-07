@@ -4,9 +4,9 @@ import type { Metadata } from "next";
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
-    title: "Platforma SOHO-Headless",
+    title: "Osińska Makeup Kobido",
     description: "Testowa platforma",
-    keywords: "SOHO B2B",
+    keywords: "kobido, makeup, makijaz, masaz",
     robots: "noindex,nofollow",
   };
 }
